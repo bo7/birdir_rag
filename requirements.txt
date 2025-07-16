@@ -1,0 +1,7 @@
+jina
+openapi-python-client
+great_expectations
+grafanalib
+langchain
+openrouter-client
+mcp-agent

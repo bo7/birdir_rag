@@ -1,0 +1,20 @@
+name: rag-poc
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pyodbc
+  - dbt-core
+  - dbt-postgres
+  - pydantic
+  - qdrant-client
+  - neo4j
+  - google-adk
+  - requests
+  - streamlit
+  - prometheus_client
+  - pytest
+  - git
+  - pip  # just to make sure pip is available

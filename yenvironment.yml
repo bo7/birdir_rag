@@ -1,0 +1,26 @@
+name: rag-poc
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pyodbc             # MSSQL connectivity
+  - dbt-core           # dbt for schema extraction & sampling
+  - dbt-postgres
+  - pydantic           # JSON schema models
+  - jina-client        # Jina Embeddings v4 API
+  - qdrant-client      # Qdrant Python client
+  - neo4j              # Neo4j Python driver
+  - google-adk         # Google ADK Python SDK
+  - requests           # HTTP calls (OpenRouter, etc.)
+  - openapi-python     # for OpenRouter client if needed
+  - great_expectations # Testing framework
+  - streamlit          # Evaluation dashboards
+  - prometheus_client  # Expose metrics
+  - grafanalib         # Grafana as code (optional)
+  - pytest             # Test runner
+  - git                # Version control (GitHub Actions)
+  - pip:
+    - langchain        # Required for LangGraph fusion node
+    - openrouter-client
+    - mcp-agent
